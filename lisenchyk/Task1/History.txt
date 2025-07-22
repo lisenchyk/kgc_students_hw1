@@ -1,0 +1,584 @@
+    1  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+    2  ls
+    3  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(lisenchyk)-$(lisenchyk -m).sh"
+    4  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+    5  ls
+    6  ./Miniforge3-Linux-x86_64.sh
+    7  general
+    8  -i general
+    9  Igeneral
+   10  ls
+   11  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   12  ls
+   13  ./Miniforge3-Linux-x86_64.sh
+   14  ls- l
+   15  Ls -l
+   16  chmod +x Miniforge3-Linux-x86_64.sh
+   17  ./Miniforge3-Linux-x86_64.sh
+   18  ls
+   19  -/.bashrc
+   20  ls
+   21  Remove-item -Path "/home/lisenchyk/miniforge3"
+   22  Remove -Item -Path "/home/lisenchyk/miniforge3"
+   23  rm -r "/home/lisenchyk/miniforge3"
+   24  mamba install - curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   25  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   26  ls
+   27  cd ..
+   28  cd /students/lisenchyk
+   29  chmod +x Miniforge3-Linux-x86_64.sh
+   30  ls
+   31  cd
+   32  mkdir /students/lisenchyk
+   33  /students# mkdir /students/lisenchyk
+   34  mkdir /students/lisenchyk
+   35  mkdir/students/lisenchyk
+   36  mkdir/students/lisenchyk/
+   37  [A
+   38  ./Miniforge3-Linux-x86_64.sh
+   39  mkdir /students/lisenchyk/mamba^C
+   40  ./Miniforge3-Linux-x86_64.sh
+   41  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+   42  chmod +x Miniforge3-Linux-x86_64.sh
+   43  ./Miniforge3-Linux-x86_64.sh
+   44  chmod +x Miniforge3-Linux-x86_64.sh
+   45  ./Miniforge3-Linux-x86_64.sh
+   46  ls
+   47  pwd
+   48  ls
+   49  date
+   50  cal
+   51  sudo apt install ncal
+   52  cal
+   53  df
+   54  free
+   55  pwd
+   56  cd
+   57  ls
+   58  pwd
+   59  ls
+   60  pwd
+   61  ls
+   62  ssh.exe -i C:\Users\lisen\.ssh\lisenchyk lisenchyk@212.109.195.132
+   63  cd /usr/bin
+   64  pwd
+   65  ls
+   66  cd
+   67  cd /usr/bin
+   68  pwd
+   69  cd /user
+   70  cd /usr
+   71  pwd
+   72  cd /usr/bin
+   73  pwd
+   74  cd ..
+   75  pwd
+   76  cd ./bin
+   77  pwd
+   78  cd
+   79  pwd
+   80  cd bin
+   81  cd /usr
+   82  cd bin
+   83  cd
+   84  cd -
+   85  cd
+   86  ls /bin
+   87  ls - /bin
+   88  ls ~ /bin
+   89  ls -l /bin
+   90  ls -l
+   91  pwd
+   92  ls
+   93  cd /usr/bin
+   94  ls -l /bin
+   95  ls /bin
+   96  cd
+   97  cd /etc
+   98  ls -l /etc
+   99  file /sensors3.conf
+  100  sudo apt install file
+  101  file /
+  102  file /xattr.conf
+  103  less /xattr.conf 
+  104  less /etc/xattr.conf
+  105  cd
+  106  pwd
+  107  ls
+  108  cd
+  109  cd /students
+  110  ls /students
+  111  ls /students/lisenchyk
+  112  cd
+  113  ls
+  114  rm ./miniforge3
+  115  ls /home/lisenchyk
+  116  rm ./Miniforge3-Linux-x86_64.sh
+  117  ls
+  118  rm ./Miniforge3--.sh
+  119  ls
+  120  mkdir ./alisa
+  121  ls
+  122  ls -l
+  123  rm ./'['
+  124  rm /home/lisenchyk/'['
+  125  ls
+  126  cd 
+  127  ls
+  128  cd ..
+  129  cd..
+  130  cd ..
+  131  cd
+  132  ls
+  133  cd /students
+  134  ls
+  135  cd ./lisencyk
+  136  cd ./lisenchyk
+  137  ls
+  138  pwd
+  139  ls
+  140  ls ./miniforge3
+  141  ls -l ./miniforge3
+  142  rm ./miniforge3
+  143  rm /students/lisenchyk/miniforge3
+  144  ls
+  145  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+  146  ls
+  147  chmod +x Miniforge3-Linux-x86_64.sh
+  148  ./Miniforge3-Linux-x86_64.sh
+  149  ls
+  150  -u
+  151  ls
+  152  pwd
+  153  ls
+  154  cd /students
+  155  ls
+  156  cd ./lisenchyk
+  157  ls
+  158  mkdir /students/lisenchyk/mamba
+  159  ls
+  160  ls /students/lisenchyk
+  161  rm ./mamba
+  162  ls
+  163  rm /students/lisenchyk/mamba
+  164  ls
+  165  cd /students
+  166  ls
+  167  cd /students/lisenchyk
+  168  ls
+  169  rm /students/lisenchyk/mamba
+  170  ls -l
+  171  pwd
+  172  ls
+  173  cd /students/lisenchyk
+  174  ls
+  175  rm ./mamba
+  176  ls mamba/bin/
+  177  source ~/.bashrc
+  178  cd /students/lisenchyk
+  179  ls
+  180  source ~/.bashrc
+  181  ls
+  182  mamba --version
+  183  cd /students/lisenchyk
+  184  ls -l
+  185  chmod +x Miniforge3-Linux-x86_64.sh
+  186  ./Miniforge3-Linux-x86_64.sh
+  187  rm -rf /students/lisenchyk/miniforge3
+  188  ls
+  189  rm -rf /students/lisenchyk/mamba
+  190  ls
+  191  ./Miniforge3-Linux-x86_64.sh
+  192  source ~/.bashrc
+  193  mamba create --name cowsay-env cowsay -y
+  194  mamba create --name cowsay-env -c conda-forge cowsay -y
+  195  mamba install dnachun::cowsay
+  196  cowsay
+  197  mamba activate cowsay
+  198  eval "$(mamba shell hook --shell bash)"
+  199  mamba activate cowsay
+  200  mamba activate
+  201  mamba activate cowsay
+  202  eval "$(mamba shell hook --shell bash)"  
+  203  mamba activate cowsay 
+  204  mamba env list
+  205  mamba create --name my-cowsay -c dnachun cowsay -y
+  206  mamba activate my-cowsay
+  207  cowsay i love linux!
+  208  mamba shell init --shell bash --root-prefix=~/.local/share/mamba
+  209  source ~/.bashrc
+  210  mamba env list
+  211  mamba env list && ls -la ~/miniforge3/bin/cowsay
+  212  mamba env list && ls -la ~/miniforge3/envs/my-cowsay
+  213  eval "$(mamba shell hook --shell bash)"
+  214  mamba activate /students/lisenchyk/miniforge3/envs/my-cowsay
+  215  which cowsay || find /students/lisenchyk/miniforge3/envs/my-cowsay -name "cowsay"
+  216  which mamba
+  217  eval "$(/students/lisenchyk/miniforge3/bin/mamba shell hook --shell bash)"
+  218  mamba activate /students/lisenchyk/miniforge3/envs/my-cowsay
+  219  which cowsay
+  220  mamba env list
+  221  cowsay "все работаетmamba env list!"
+  222  cowsay "все работает!"
+  223  whitch cowsay
+  224  mamba list
+  225  cowsay "muuuu"
+  226  mamba deactivate
+  227  mamba activate base
+  228  cowsay
+  229  mamba env list
+  230  exit
+  231  mamba deactivate
+  232  mkdir -p /students/lisenchyk/mamba
+  233  mv /home/lisenchyk/.local/share/mamba/* /students/lisenchyk/mamba/
+  234  nano ~/.bashrc
+  235  mamba deactivate
+  236  cd /students/lisenchyk
+  237  ls -l
+  238  export MAMBA_ROOT_PREFIX=/students/lisenchyk/mamba
+  239  eval "$(/students/lisenchyk/mamba/bin/mamba shell hook --shell bash)"
+  240  mv /home/lisenchyk/.local/share/mamba/* /students/lisenchyk/mamba/
+  241  mamba info
+  242  mamba create --prefix /students/lisenchyk/mamba/envs/my-cowsay -c dnachun cowsay -y
+  243  mamba create --prefix /students/lisenchyk/mamba/envs/my-cowsay -c conda-forge cowsay -y
+  244  mamba evn list
+  245  pwd
+  246  ls /home/lisenchyk
+  247  cd /students/lisenchyk
+  248  pwd
+  249  cd ..
+  250  pwd
+  251  cd /home/lisenchyk
+  252  mamba deactivate
+  253  cd /students/lisenchyk
+  254  source ~/.bashrc
+  255  mamba evn list
+  256  mamba activate cowsay
+  257  mamba deactivate
+  258  ls -l
+  259  mamba info
+  260  mkdir -p /students/lisenchyk/mamba
+  261  cp -r /home/lisenchyk/.local/share/mamba/* /students/lisenchyk/mamba/
+  262  nano ~/.bashrc
+  263  mamba list
+  264  mamba deactivate
+  265  cd /students/lisenchyk
+  266  ls -l
+  267  cd kgc_students_hw1/
+  268  cd work/data
+  269  git
+  270  ls
+  271  mamba deactivate
+  272  rm -rf /home/lisenchyk/.local/share/mamba
+  273  rm -rf /home/lisenchyk/.mamba
+  274  rm -rf /home/lisenchyk/.conda
+  275  export MAMBA_ROOT_PREFIX=/students/lisenchyk/mamba
+  276  eval "$(/students/lisenchyk/mamba/bin/mamba shell hook --shell bash)"
+  277  mamba list
+  278  mamba evn list
+  279  source ~/.bashrc
+  280  mamba activate cowsay
+  281  mamba create --name my-cowsay -c dnachun cowsay -y
+  282  mamba activate my-cowsay
+  283  cowsay "привет"
+  284  deactivate cowsay
+  285  which cowsay
+  286  mamba evn list
+  287  mamba activate my-cowsay
+  288  cowsay 111
+  289  mamba evn list
+  290  which mamba
+  291  which cowsay
+  292  mamba env list
+  293  rm -rf ~/.local/share/mamba
+  294  sed -i '/>>> mamba initialize >>>/,/<<< mamba initialize <<</d' ~/.bashrc
+  295  source ~/.bashrc
+  296  mamba evn list
+  297  mamba env list
+  298  mamba activate my-cowsay
+  299  which mamba
+  300  mamba deactivate
+  301  mamba env list
+  302  mamba deactivate
+  303  rm -rf ~/.local/share/mamba
+  304  sed -i '/>>> mamba initialize >>>/,/<<< mamba initialize <<</d' ~/.bashrc
+  305  source ~/.bashrc
+  306  mamba env list
+  307  rm -rf /home/lisenchyk/.local/share/mamba
+  308  mamba env list
+  309  mamba deactivate
+  310  rm -rf /home/lisenchyk/.local/share/mamba 
+  311  mamba env list
+  312  mamba info
+  313  rm -rf ~/.local/share/mamba
+  314  rm -rf ~/.mamba
+  315  rm -rf ~/.condarc
+  316  rm -rf /home/lisenchyk/.local/share/mamba
+  317  rm -rf /home/lisenchyk/.mamba
+  318  rm -rf /home/lisenchyk/.condarc
+  319  rm -rf /home/lisenchyk/.mambarc
+  320  rm -rf /home/lisenchyk/.cache/mamba
+  321  rm -rf /home/lisenchyk/Miniforge3-*.sh
+  322  rm -rf ~/.cache/mamba
+  323  rm -f ~/Miniforge3-*.sh
+  324  source ~/.bashrc
+  325  which mamba || echo "Mamba not found"
+  326  mamba info | grep "envs directories"
+  327  mkdir -p /students/lisenchyk/mamba_envs
+  328  echo "envs_dirs: [/students/lisenchyk/mamba_envs]" > ~/.condarc
+  329  mamba info | grep "envs directories"
+  330  mamba env remove -n my-cowsay
+  331  mamba env list
+  332  rm -rf /home/lisenchyk/.local/share/mamba/envs/my-cowsay
+  333  mamba env list
+  334  mamba deactivate
+  335  rm -rf /home/lisenchyk/.local/share/mamba/envs/my-cowsay
+  336  mamba env list
+  337  mamba env remove -p /home/lisenchyk/.local/share/mamba/envs/my-cowsay
+  338  mamba create -n my-cowsay cowsay -y
+  339  rm -rf /home/lisenchyk/.local/share/mamba/envs/my-cowsay
+  340  mamba update --all
+  341  mamba create -n my-cowsay -c conda-forge cowsay -y
+  342  mamba config --show channels
+  343  mamba config --add channels conda-forge
+  344  mamba config --append channels conda-forge
+  345  which mamba || echo "Mamba not found"
+  346  mamba info | grep "envs directories"
+  347  mamba create -n my-cowsay cowsay -y
+  348  exit
+  349  mamba deactivate
+  350  cd /home/lisenchik/
+  351  cd /home/lisenchyk/
+  352  mamba deactivate
+  353  conda deactivate
+  354  nano ~/.bashrc
+  355  rm -rf ~/.conda
+  356  rm -rf ~/.condarc
+  357  rm -rf ~/.mamba
+  358  rm -rf ~/.local/share/mamba
+  359  rm -rf ~/miniforge3
+  360  rm -rf ~/.local/bin/cowsay*
+  361  mamba list
+  362  source /students/lisenchyk/miniforge3/bin/activate
+  363  mamba activate /students/lisenchyk/miniforge3
+  364  eval "$(mamba shell hook --shell bash)"
+  365  cowsay "Mamba работает в /students/lisenchyk/miniforge3"
+  366  echo '# ===== Miniforge3 Configuration =====' >> ~/.bashrc
+  367  echo 'export MAMBA_ROOT_PREFIX=/students/lisenchyk/miniforge3' >> ~/.bashrc
+  368  echo 'eval "$(/students/lisenchyk/miniforge3/bin/mamba shell hook --shell bash)"' >> ~/.bashrc
+  369  echo 'mamba deactivate 2>/dev/null  # Деактивируем base по умолчанию' >> ~/.bashrc
+  370  source ~/.bashrc
+  371  echo 'alias cowsay="mamba activate /students/lisenchyk/miniforge3 && cowsay"' >> ~/.bashrc
+  372  source ~/.bashrc
+  373  cowsay "Простой вызов"
+  374  source ~/.bashrc
+  375  mamba env list
+  376  cowsay "ураа"
+  377  mamba env list
+  378  which cowsay
+  379  which mamba
+  380  exit
+  381  cd work/data/
+  382  cd /students/lisenchyk
+  383  ls
+  384  mkdir ./work
+  385  ls
+  386  mkdir ./work/hw1
+  387  cd ./work
+  388  ls
+  389  cd ./work/hw1
+  390  git clone https://github.com/glitchheadgit/kgc_students_hw1/edit/main/README.md
+  391  git clone https://github.com/glitchheadgit/kgc_students_hw1
+  392  ls
+  393  rm -rf /students/lisenchyk/work/hw1
+  394  ls
+  395  cd kgc_students_hw1
+  396  ls
+  397  git log
+  398  rm -rf /students/lisenchyk/work/kgc_students_hw1
+  399  cd ..
+  400  ls 
+  401  ls -l
+  402  git clone https://github.com/lisenchyk/kgc_students_hw1.git
+  403  ls
+  404  cd kgc_students_hw1
+  405  ls
+  406  git branch
+  407  git checkout -b lisenchyk
+  408  git branch
+  409  mkdir lisenchyk
+  410  cd lisenchyk/
+  411  touch README.md
+  412  scp C:\Users\lisen\dump.fasta.gz lisenchyk@212.109.195.132:/students/lisenchyk/work/
+  413  cd /students/lisenchyk/work/
+  414  ls
+  415  scp C:\Users\lisen\dump.fasta.gz lisenchyk@212.109.195.132:/students/lisenchyk/work/
+  416  scp C:\Users\lisen\dump.fasta.gz lisenchyk@212.109.195.132:/home/lisenchyk/
+  417  scp -r C:\Users\lisen\dump.fasta.gz lisenchyk@212.109.195.132:/home/lisenchyk/
+  418  pscp C:\Users\lisen\dump.fasta.gz lisenchyk@212.109.195.132:/home/lisenchyk/
+  419  scp /home/lisenchyk/ lisenchyk@212.109.195.132: C:\Users\lisen\dump.fasta.gz
+  420  mamba env list
+  421  cowsay "Тест"
+  422  mamba config --set auto_activate_base false
+  423  mamba deactivate
+  424  mamba config --set auto_activate_base false
+  425  mamba env list
+  426  cowsay aaa
+  427  mamba env list
+  428  mamba activate cowsay
+  429  cowsay hi!
+  430  mamba list
+  431  mamba env list
+  432  mamba which
+  433  which mamba
+  434  which cowsay
+  435  mamba activate cowsay
+  436  mamba activate my-cowsay
+  437  cowsay test
+  438  mamba env list
+  439  mamba deactivate
+  440  mamba activate /students/lisenchyk/miniforge3/envs/my-cowsay
+  441  mamba env list
+  442  cowsay aaa
+  443  mamba config --set auto_activate_base false
+  444  nano ~/.bashrc
+  445  mamba deactivate
+  446  source ~/.bashrc
+  447  exit
+  448  mamba activate my-cowsay
+  449  cowsay aaa
+  450  mamba create --name cowsay --clone my-cowsay
+  451  nano ~/.bashrc
+  452  source ~/.bashrc
+  453  cowsay "Hello world"
+  454  exit
+  455  scp C:\Users\lisen\dump.fasta.gz lisenchyk@212.109.195.132:/home/lisenchyk/
+  456  scp "C:\Users\lisen\dump.fasta" lisenchyk@212.109.195.132:/home/lisenchyk/
+  457  scp /c/Users/lisen/dump.fasta lisenchyk@212.109.195.132:/home/lisenchyk/
+  458  scp /c/Users/lisen/dump.fasta.gz lisenchyk@212.109.195.132:/home/lisenchyk/
+  459  ssh.exe -i C:\Users\lisen\.ssh\lisenchyk "C:\Users\lisen\dump.fasta.gz" lisenchyk@212.109.195.132
+  460  ssh -i C:\Users\lisen\.ssh\lisenchyk "C:\Users\lisen\dump.fasta.gz" lisenchyk@212.109.195.132
+  461  scp -i C:\Users\lisen\.ssh\lisenchyk "C:\Users\lisen\dump.fasta.gz" lisenchyk@212.109.195.132
+  462  scp -i "C:/Users/lisen/.ssh/lisenchyk" "C:/Users/lisen/dump.fasta.gz" lisenchyk@212.109.195.132:/home/lisenchyk/
+  463  scp -i "C:/Users/lisen/.ssh/lisenchyk" "C:/Users/lisen/dump.fasta.gz" lisenchyk@212.109.195.132:/students/lisenchyk/work/
+  464  exit
+  465  cowsay test
+  466  mamba env list
+  467  mamba deactivate cowsay
+  468  mamba deactivate my-cowsay
+  469  mamba deactivate
+  470  mamba activate
+  471  mamba activate my-cowsay
+  472  cowsay test
+  473  mamba env list
+  474  mamba deactivate
+  475  cd /students/lisenchyk/work/
+  476  ls /students/lisenchyk/work/
+  477  cd /students/lisenchyk/work/kgc_students_hw1/
+  478  ls
+  479  git branch
+  480  cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/
+  481  ls
+  482  cd /students/lisenchyk/work/
+  483  ls
+  484  cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/
+  485  git branch
+  486  git status
+  487  mkdir -p Task1/{protein,mrna,reference,work}
+  488  cp /students/lisenchyk/work/dump.fasta.gz
+  489  cp /students/lisenchyk/work/dump.fasta.gz .
+  490  ls
+  491  cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/Task1
+  492  ls
+  493  cp /students/lisenchyk/work/kgc_students_hw1/lisenchyk/dump.fasta.gz .
+  494  ls
+  495  gunzip -c dump.fasta.gz > Task1/dump.fasta
+  496  gunzip -c ./dump.fasta.gz > dump.fasta
+  497  cd Task1
+  498  ls
+  499  head -n 20 dump.fasta
+  500  tail -n 20 dump.fasta
+  501  grep '>' dump.fasta | head -n 10
+  502  grep '>' dump.fasta | head -n
+  503  grep '>' dump.fasta | head -n 100
+  504  grep '>' dump.fasta | head -n 200
+  505  grep '>' dump.fasta | head -n 300
+  506  grep 'complete sequence' dump.fasta | head -n 5
+  507  grep 'complete sequence' dump.fasta | head -n 200
+  508  grep 'protein' dump.fasta | head -n 200
+  509  grep 'mRNA' dump.fasta | head -n 200
+  510  grep 'complete genome' dump.fasta | head -n 200
+  511  grep 'complete genome' dump.fasta
+  512  grep '>' dump.fasta
+  513  grep -с 'complete genome' dump.fasta
+  514  grep -c '>' dump.fasta
+  515  grep -с 'complete genome' dump.fasta
+  516  grep -c 'complete genome' dump.fasta
+  517  grep -c 'mRNA' dump.fasta
+  518  grep -c 'protein' dump.fasta
+  519  grep -c 'complete sequence' dump.fasta
+  520  grep -c 'complete sequence''complete genome' dump.fasta
+  521  grep -c 'complete sequence'||'complete genome' dump.fasta
+  522  grep -c 'complete sequence' dump.fasta
+  523  grep -с 'complete genome' dump.fasta
+  524  grep -c 'complete genome' dump.fasta 
+  525  grep -c '>' dump.fasta
+  526  echo "mRNA: $(grep -c 'mRNA' dump.fasta)"
+  527  grep -m 5 '^>' dump.fasta
+  528  grep -m 5 '^>' dump.fasta
+  529  grep '>' dump.fasta | head -n 5
+  530  cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/Task1
+  531  ls
+  532  awk 'BEGIN {n=0} 
+    /^>/ {
+        if (n) close(outfile)
+        n++
+        outfile = sprintf("fasta_%03d.fa", n)
+        print $0 > outfile
+        next
+    }
+    {print $0 > outfile}' dump.fasta
+  533  ls
+  534  head fasta_001.fa
+  535  head fasta_133.fa
+  536  for file in fasta_*.fa; do     header=$(head -n1 "$file");          if [[ "$header" == *"complete genome"* ]] ||         [[ "$header" == *"complete sequence"* ]]; then         mv -v "$file" reference/;     elif [[ "$header" == *"protein"* ]]; then         mv -v "$file" protein/;     elif [[ "$header" == *"mRNA"* ]]; then         mv -v "$file" mrna/;     else         mv -v "$file" work/;     fi; done
+  537  ls
+  538  calculate_length() {     file=$1
+    grep -v '^>' "$file" | tr -d '\n' | wc -c; }
+  539  echo "Размеры последовательностей:" > sizes_report.txt
+  540  echo "Белки:" >> sizes_report.txt
+  541  for f in protein/*.fa; do     length=$(calculate_length "$f");     echo "$(basename $f): $length аминокислот" >> sizes_report.txt; done
+  542  echo -e "\nмРНК:" >> sizes_report.txt
+  543  for f in mrna/*.fa; do     length=$(calculate_length "$f");     echo "$(basename $f): $length нуклеотидов" >> sizes_report.txt; done
+  544  echo -e "\nРеференсные геномы:" >> sizes_report.txt
+  545  for f in reference/*.fa; do     length=$(calculate_length "$f");     echo "$(basename $f): $length п.н." >> sizes_report.txt; done
+  546  echo -e "\nРабочие файлы:" >> sizes_report.txt
+  547  for f in work/*.fa; do     length=$(calculate_length "$f");     echo "$(basename $f): $length символов" >> sizes_report.txt; done
+  548  gzip protein/*.fa
+  549  gzip mrna/*.fa
+  550  gzip reference/*.fa
+  551  gzip work/*.fa
+  552  ls
+  553  cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/Task1/mrna/
+  554  ls
+  555  cd .
+  556  cd ..
+  557  ls
+  558  echo "Сводная статистика:" > summary.txt
+  559  echo "Белки: $(ls protein | wc -l) файлов" >> summary.txt
+  560  echo "мРНК: $(ls mrna | wc -l) файлов" >> summary.txt
+  561  echo "Референсные геномы: $(ls reference | wc -l) файлов" >> summary.txt
+  562  echo "Рабочие файлы: $(ls work | wc -l) файлов" >> summary.txt
+  563  echo "Общее количество: $(ls {protein,mrna,reference,work} | wc -l) файлов" >> summary.txt
+  564  ls
+  565  cat sizes_report.txt
+  566* 
+  567  ls
+  568  chmod -R 775 protein mrna reference
+  569  chmod 1777 work
+  570  cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/Task1/work/
+  571  ls
+  572  head fasta_064.fa
+  573  cd ..
+  574  mv -v "fasta_064.fa.gz" reference/
+  575  history > History.txt
