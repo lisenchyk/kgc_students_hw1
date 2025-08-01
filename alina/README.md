@@ -47,4 +47,4 @@ done'
             (__)\       )\/\
                 ||----w |
                 ||     ||
-![second task all processes](/Users/alinagilmanova/Desktop/screentop.png)
+![second task all processes](/students/alinametiloranch/screentop.png)
