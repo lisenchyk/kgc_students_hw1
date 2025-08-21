@@ -56,9 +56,9 @@ find . -name "*.fasta" -exec gzip {} \;
 
 Приложите к ответам на вопросы выше скриншот top и расскажите, что означают колонки PR, NI, VIRT, RES, SHR, S. Как сменить отображение занимаемых ресурсов в битах на МБ, ГБ и т.д. Как это сделать в шляпе команды (B Mem, B Swap). Что такое Swap? Какие состояния процессов бывают и в чём их отличие?
 ## Описание решения второй задачи 
-(/students/alinametiloranch//kgc_students_hw1/alina/<img width="1440" height="900" alt="screentop" src="https://github.com/user-attachments/assets/77616f89-3a7d-4de1-a254-6938569af890" />
-screentop.png)
-USER: root,  pid: 254603
+<img width="1440" height="900" alt="screentop" src="https://github.com/user-attachments/assets/77616f89-3a7d-4de1-a254-6938569af890" />
+### USER: root,  pid: 254603, java самый нагруженный процесс на сервере
+<img width="1440" height="900" alt="screentop" src="https://github.com/user-attachments/assets/77616f89-3a7d-4de1-a254-6938569af890" />
 если известен pid: kill номер_pid
 (kill 254603)
 если pid не известен, то можно использовать pkill (уничтожит все процессы в которых есть название которые мы впишем далее)
