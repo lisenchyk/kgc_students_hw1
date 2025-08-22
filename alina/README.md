@@ -33,9 +33,11 @@ sudo groupadd senior
 sudo chgrp -R senior fastafiles
 Далее с помощью  Split Разделяю файлы на отдельные фаста файлы, используя в качестве разделителя строки с >
 ## Смогла только сделать отдельные конвееры 
-for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "protein"; then         mv "$file" protein/;     fi; done
+''' for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "protein"; then         mv "$file" protein/;     fi; done
+for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "mRNA"; then         mv "$file" mRNA/;     fi; done
+for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "sequence|complete|genome"; then         mv "$file" reference/;     fi; done
 ## Сжимаю файлы в gz
-find . -name "*.fasta" -exec gzip {} \;
+find . -name "*.fasta" -exec gzip {} \; '''
  ____________________________________
 / ура первое задание \
 \ все!                            /
