@@ -29,8 +29,8 @@
   Устанавливаю права на папки кроме work, 7 rwx ( удалять/создавать/редактировать/читать), 5 r-x (чтение и открытие, редактирование недоступно)
  `sudo chmod -R 775 fastafiles/mRNA fastafiles/protein fastafiles/sequence`
  ## Специальные условия для папки work, 1 отвечает за sticky bit
- `sudo chmod 1777 fastafiles/work`
-`  sudo chgrp -R senior fastafiles `
+ `sudo chmod 1777 fastafiles/work
+sudo chgrp -R senior fastafiles `
 Далее с помощью  csplit разделяю файлы на отдельные фаста файлы, используя в качестве разделителя строки с >
 `csplit -z -f fasta_ -b %03d.fa dump.fasta '/^>/' '{*}'`
 ## Смогла только сделать отдельные конвееры 
