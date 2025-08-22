@@ -24,18 +24,20 @@
 ## Описание выполненной работы
 Итак сначала я с помощью  FilleZilla   перекидываю резервную копию на сервер. Далее создаю рабочие папки и рабочую группу
 ## Создаю группу 
-sudo groupadd senior
+`sudo groupadd senior`
  ## Устанавливаю группу-владельца для папки
   Устанавливаю права на папки кроме work, 7 rwx ( удалять/создавать/редактировать/читать), 5 r-x (чтение и открытие, редактирование недоступно)
- sudo chmod -R 775 fastafiles/mRNA fastafiles/protein fastafiles/sequence
+ `sudo chmod -R 775 fastafiles/mRNA fastafiles/protein fastafiles/sequence`
  ## Специальные условия для папки work, 1 отвечает за sticky bit
- sudo chmod 1777 fastafiles/work
-sudo chgrp -R senior fastafiles
+ `sudo chmod 1777 fastafiles/work`
+`sudo chgrp -R senior fastafiles`
 Далее с помощью  Split Разделяю файлы на отдельные фаста файлы, используя в качестве разделителя строки с >
 ## Смогла только сделать отдельные конвееры 
-for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "protein"; then         mv "$file" protein/;     fi; done
+```for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "protein"; then         mv "$file" protein/;     fi; done```
+```for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "complete|genome|sequence"; then         mv "$file" reference/;     fi; done```
+```for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "mRNA"; then         mv "$file" mRNA/;     fi; done```
 ## Сжимаю файлы в gz
-find . -name "*.fasta" -exec gzip {} \;
+`find . -name "*.fasta" -exec gzip {} \;`
  ____________________________________
 / ура первое задание \
 \ все!                            /
