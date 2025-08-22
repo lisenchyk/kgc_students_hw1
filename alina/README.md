@@ -31,7 +31,8 @@ sudo groupadd senior
  ## Специальные условия для папки work, 1 отвечает за sticky bit
  `sudo chmod 1777 fastafiles/work`
 `  sudo chgrp -R senior fastafiles `
-Далее с помощью  Split Разделяю файлы на отдельные фаста файлы, используя в качестве разделителя строки с >
+Далее с помощью  csplit разделяю файлы на отдельные фаста файлы, используя в качестве разделителя строки с >
+`csplit -z -f fasta_ -b %03d.fa dump.fasta '/^>/' '{*}'`
 ## Смогла только сделать отдельные конвееры 
 ``` for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "protein"; then         mv "$file" protein/;     fi; done ```
 ``` for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "mRNA"; then         mv "$file" mRNA/;     fi; done ```
