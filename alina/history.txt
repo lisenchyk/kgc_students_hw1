@@ -1,0 +1,1143 @@
+  217          mv "$file" reference/
+  218      fi
+  219  done
+  220  for file in fasta_*.fa; do     header=$(head -n1 "$file");          if [[ $header == *"protein"* || $header == *"peptide"* ]]; then         mv "$file" protein/; elif [[ $header == *"mRNA"* || $header == *"transcript"* || $header == *"cDNA"* ]]; then         mv "$file" mrna/ elif [[ $header == *sequence"* ]] then
+  221          mv "$file" reference/
+  222      fi
+  223  done
+  224  for file in fasta_*.fa; do     header=$(head -n1 "$file");          if [[ $header == *"protein"* || $header == *"peptide"* ]]; then         mv "$file" protein/; elif [[ $header == *"mRNA"* || $header == *"transcript"* || $header == *"cDNA"* ]]; then         mv "$file" mrna/ elif [[ $header == *sequence"* ]] then
+  225          mv "$file" reference/
+  226      fi
+  227  done
+  228  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/reference
+  229  cd -
+  230  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  231  for file in fasta_*.fa; do     header=$(head -n1 "$file");          if [[ $header == *"protein"* || $header == *"peptide"* ]]; then         mv "$file" protein/;     elif [[ $header == *"mRNA"* || $header == *"transcript"* || $header == *"cDNA"* ]]; then         mv "$file" mrna/;     elif [[ $header == *"sequence"* ]]; then         mv "$file" reference/;     fi; done
+  232  sudo for file in fasta_*.fa; do
+  233  done
+  234  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  235  sudo bash -c for file in fasta_*.fa; do
+  236  done
+  237  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  238  sudo bash -c for file in fasta_*.fa; do
+  239  done
+  240  pwd
+  241  ls
+  242  ls -ld protein
+  243  sudo bash -c '
+  244  mkdir -p protein mrna reference
+  245  for file in fasta_*.fa; do
+  246      header=$(head -n1 "$file" 2>/dev/null)
+  247      if echo "$header" | grep -q "protein"; then
+  248          mv "$file" protein/
+  249      elif echo "$header" | grep -q "peptide"; then
+  250          mv "$file" protein/
+  251      elif echo "$header" | grep -q "mRNA"; then
+  252          mv "$file" mrna/
+  253      elif echo "$header" | grep -q "transcript"; then
+  254          mv "$file" mrna/
+  255      elif echo "$header" | grep -q "cDNA"; then
+  256          mv "$file" mrna/
+  257      elif echo "$header" | grep -q "sequence"; then
+  258          mv "$file" reference/
+  259      else
+  260          echo "Неизвестный тип: $file"
+  261      fi
+  262  done'
+  263  head fasta_003.fa
+  264  ls
+  265  ls mrna
+  266  cd /students/alinametiloranch/kgc_students_hw1/alina/task
+  267  sudo bash -c '
+  268  for file in fasta_*.fa; do
+  269     if [ ! -f "$file" ]; then
+  270          continue
+  271      fi
+  272      header=$(head -n1 «$file)
+  273      if echo "$header" | grep -qiE "protein|peptide|orf"; then
+  274          echo "Определен как белок"
+  275          mv -v "$file" protein/
+  276      elif echo "$header" | grep -qiE "mrna|transcript|cdna|rna"; then
+  277          echo "Определен как мРНК"
+  278          mv -v "$file" mrna/
+  279      elif echo "$header" | grep -qiE "genom(e|ic)|chromosome|contig|scaffold|sequence|plasmid|complete"; then
+  280          echo "Определен как геномная последовательность"
+  281          mv -v "$file" sequence/
+  282      else
+  283          echo "Неизвестный тип: $file
+  284          mv -v "$file" unknown/
+  285      fi
+  286  done
+  287  '
+  288  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  289  sudo bash -c '
+  290  for file in fasta_*.fa; do
+  291     if [ ! -f "$file" ]; then
+  292          continue
+  293      fi
+  294      header=$(head -n1 «$file)
+  295      if echo "$header" | grep -qiE "protein|peptide|orf"; then
+  296          echo "Определен как белок"
+  297          mv -v "$file" protein/
+  298      elif echo "$header" | grep -qiE "mrna|transcript|cdna|rna"; then
+  299          echo "Определен как мРНК"
+  300          mv -v "$file" mrna/
+  301      elif echo "$header" | grep -qiE "genom(e|ic)|chromosome|contig|scaffold|sequence|plasmid|complete"; then
+  302          echo "Определен как геномная последовательность"
+  303          mv -v "$file" sequence/
+  304      else
+  305          echo "Неизвестный тип: $file
+  306          mv -v "$file" unknown/
+  307      fi
+  308  done
+  309  '
+  310  sudo bash -c '
+  311  mkdir -p protein mrna sequence unknown
+  312  for file in fasta_*.fa; do
+  313      if [ ! -f "$file" ]; then
+  314          continue
+  315      fi
+  316      
+  317      header=$(head -n1 "$file")
+  318      
+  319      if echo "$header" | grep -qiE "protein|peptide|orf"; then
+  320          echo "Определен как белок: $file"
+  321          mv -v "$file" protein/
+  322      elif echo "$header" | grep -qiE "mrna|transcript|cdna|rna"; then
+  323          echo "Определен как мРНК: $file"
+  324          mv -v "$file" mrna/
+  325      elif echo "$header" | grep -qiE "genom(e|ic)|chromosome|contig|scaffold|sequence|plasmid|complete|assembly"; then
+  326          echo "Определен как геномная последовательность: $file"
+  327          mv -v "$file" sequence/
+  328      else
+  329          echo "Неизвестный тип: $file"
+  330          mv -v "$file" unknown/
+  331      fi
+  332  done'
+  333  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  334  for dir in protein mrna sequence unknown; do     if [ -d "$dir" ]; then         find "$dir" -type f -name '*.fa' -exec gzip -v {} \;;     fi; done
+  335  sudo c- 'for dir in protein mrna sequence unknown; do
+  336      if [ -d "$dir" ]; then
+  337          find "$dir" -type f -name '*.fa' -exec gzip -v {} \;
+  338      fi
+  339  done
+  340  '
+  341  sudo -c 'for dir in protein mrna sequence unknown; do
+  342      if [ -d "$dir" ]; then
+  343          find "$dir" -type f -name '*.fa' -exec gzip -v {} \;
+  344      fi
+  345  done
+  346  '
+  347  sudo bash -c 'for dir in protein mrna sequence unknown; do
+  348      if [ -d "$dir" ]; then
+  349          find "$dir" -type f -name '*.fa' -exec gzip -v {} \;
+  350      fi
+  351  done
+  352  '
+  353  for gzfile in *.gz; do     header=$(zcat "$gzfile" | head -n1);     scientific_name=$(
+  354          echo "$header" | 
+  355          grep -o -E '[A-Z][a-z]+ [a-z]+' |         
+  356         tr ' ' '_'                         
+  357     );          if [ -n "$scientific_name" ]; then         new_name="${scientific_name}.fasta.gz";         echo "Переименовываем: $gzfile -> $new_name";         mv -v "$gzfile" "$new_name";     else         echo "Не удалось определить название для $gzfile";         echo "Заголовок: $header";     fi; done
+  358  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/sequence
+  359  /students/alinametiloranch/kgc_students_hw1/alina/task1
+  360  for gzfile in *.gz; do     header=$(zcat "$gzfile" | head -n1);     scientific_name=$(
+  361          echo "$header" | 
+  362          grep -o -E '[A-Z][a-z]+ [a-z]+' |         
+  363         tr ' ' '_'                         
+  364     );          if [ -n "$scientific_name" ]; then         new_name="${scientific_name}.fasta.gz";         echo "Переименовываем: $gzfile -> $new_name";         mv -v "$gzfile" "$new_name";     else         echo "Не удалось определить название для $gzfile";         echo "Заголовок: $header";     fi; done
+  365  sudo bash -c 'for gzfile in *.gz; do
+  366      header=$(zcat "$gzfile" | head -n1)
+  367      scientific_name=$(
+  368          echo "$header" | 
+  369          grep -o -E '[A-Z][a-z]+ [a-z]+' |         
+  370         tr ' ' '_'                         
+  371     )
+  372      
+  373      if [ -n "$scientific_name" ]; then
+  374          new_name="${scientific_name}.fasta.gz"
+  375          echo "Переименовываем: $gzfile -> $new_name"
+  376          mv -v "$gzfile" "$new_name"
+  377      else
+  378          echo "Не удалось определить название для $gzfile"
+  379          echo "Заголовок: $header"
+  380      fi
+  381  done
+  382  sudo bash -c 'for gzfile in *.gz; do
+  383      header=$(zcat "$gzfile" | head -n1)
+  384      scientific_name=$(
+  385          echo "$header" | 
+  386          grep -o -E '[A-Z][a-z]+ [a-z]+' |         
+  387         tr ' ' '_'                         
+  388     )
+  389      
+  390      if [ -n "$scientific_name" ]; then
+  391          new_name="${scientific_name}.fasta.gz"
+  392          echo "Переименовываем: $gzfile -> $new_name"
+  393          mv -v "$gzfile" "$new_name"
+  394      else
+  395          echo "Не удалось определить название для $gzfile"
+  396          echo "Заголовок: $header"
+  397      fi
+  398  done
+  399  '
+  400  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  401  sudo bash -c '
+  402  for gzfile in *.gz; do
+  403      header=$(zcat "$gzfile" | head -n1)
+  404      scientific_name=$(
+  405          echo "$header" | 
+  406          # Ищем научное название вида: слово с большой буквы + пробел + слово с маленькой
+  407          grep -o -E "[A-Z][a-z]+ [a-z]+" | 
+  408          head -n1 | 
+  409          # Заменяем пробелы на подчеркивания
+  410          tr " " "_" | 
+  411          # Удаляем спецсимволы (кроме подчеркиваний)
+  412          sed "s/[^A-Za-z_]//g"
+  413      )
+  414      
+  415      if [ -n "$scientific_name" ]; then
+  416          new_name="${scientific_name}.fasta.gz"
+  417          echo "Переименовываем: $gzfile -> $new_name"
+  418          mv -v "$gzfile" "$new_name"
+  419      else
+  420          echo "Не удалось определить название для $gzfile"
+  421          echo "Заголовок: $header"
+  422      fi
+  423  done
+  424  '
+  425  ls
+  426  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/sequence
+  427  sudo bash -c '
+  428  for gzfile in *.gz; do
+  429      header=$(zcat "$gzfile" | head -n1)
+  430      scientific_name=$(
+  431          echo "$header" | 
+  432          # Ищем научное название вида: слово с большой буквы + пробел + слово с маленькой
+  433          grep -o -E "[A-Z][a-z]+ [a-z]+" | 
+  434          head -n1 | 
+  435          # Заменяем пробелы на подчеркивания
+  436          tr " " "_" | 
+  437          # Удаляем спецсимволы (кроме подчеркиваний)
+  438          sed "s/[^A-Za-z_]//g"
+  439      )
+  440      
+  441      if [ -n "$scientific_name" ]; then
+  442          new_name="${scientific_name}.fasta.gz"
+  443          echo "Переименовываем: $gzfile -> $new_name"
+  444          mv -v "$gzfile" "$new_name"
+  445      else
+  446          echo "Не удалось определить название для $gzfile"
+  447          echo "Заголовок: $header"
+  448      fi
+  449  done
+  450  '
+  451  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/sequence
+  452  ls
+  453  cd --\
+  454  cd --
+  455  cd (base) alinametiloranch@zolotikov:/students/alinametiloranch/kgc_students_hw1/alina/task1
+  456  cd /students/alinametiloranch/kgc_students_hw1/alina/task
+  457  d/students/alinametiloranch/kgc_students_hw1/alina/task1
+  458  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/mrna
+  459  ls
+  460  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/protein
+  461  ls
+  462  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  463  cat ~/.bash_history > history.txt
+  464  sudo cat ~/.bash_history > history.txt
+  465  sudo bash c- 'cat ~/.bash_history > history.txt
+  466  '
+  467  chmod u+w
+  468  sudo sh -c 'history > history.txt'
+  469  sudo sh -c cat ~/.bash_history > history.txt
+  470  cd /students/alinametiloranch
+  471  /students/alinametiloranch
+  472  cat ~/.bash_history > ~/my_command_history.txt
+  473  # Без sudo!
+  474  cat ~/.bash_history > ~/my_command_history.tx\
+  475  cat ~/.bash_history > /students/alinametiloranch/my_command_history.txt
+  476  head my_command_history.txt
+  477  ls
+  478  sudo sh -c 'for user in $(ls /home); do echo "### $user ###"; cat /home/$user/.bash_history; done > /students/alinametiloranch/all_users_history.txt'
+  479  HISTTIMEFORMAT="%F %T | "
+  480  PROMPT_COMMAND='[[ "$PWD" == "/students/alinametiloranch"* ]] && history 1 >> ~/.local_history'
+  481  source ~/.bashrc
+  482  touch ~/.local_history
+  483  grep "/students/alinametiloranch" ~/.local_history |  awk -F' | ' '{print $3}' > /students/alinametiloranch/local_history.txt
+  484  tail -f ~/.local_history | grep "/students/alinametiloranch"
+  485  cd /students/alinametiloranch
+  486  ls
+  487  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  488  ls
+  489  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/work
+  490  ls
+  491  cd students/alinametiloranch
+  492  cd /students/alinametiloranch
+  493  ls
+  494  cd /students/alinametiloranch/kgc_students_hw1/alina
+  495  ls
+  496  vim README.md
+  497  head README.md
+  498  vim  vim README.md
+  499  cd /students/alinametiloranch/kgc_students_hw1/alina
+  500  ls
+  501  head README.md
+  502  vim README.md
+  503  cd  /students/alinametiloranch/kgc_students_hw1/alina/task
+  504  cd  /students/alinametiloranch/kgc_students_hw1/alina/task1
+  505  git status
+  506  cd /students/alinametiloranch/kgc_students_hw1
+  507  git status
+  508  git add.
+  509  git add .
+  510  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  511  cd /students/alinametiloranch
+  512  ls
+  513  git status
+  514  git remote -v
+  515  git remote get-url origin
+  516  git status
+  517  git add .
+  518  git status 
+  519  git commit -m "Апокалипсис rm побежден, все файлы на месте"
+  520  git push origin alinametiloranch
+  521  c
+  522  alinametiloranch
+  523  git push origin alinametiloranch
+  524  cd /students/alinametiloranch/kgc_students_hw1
+  525  git push origin alinametiloranch
+  526  cd /students/alinametiloranch/kgc_students_hw
+  527  cd/students/alinametiloranch/kgc_students_hw
+  528  cd/students/alinametiloranch/kgc_students_hw1
+  529  cd /students/alinametiloranch/kgc_students_hw1
+  530  git push origin main
+  531  cd
+  532  ls
+  533  cd /students
+  534  cd/alinametiloranch
+  535  cd ssh -i C:\Users\otsel\.ssh\id_ed_25519 alinametiloranch@212.109.195.132
+  536  cd /students/alinametiloranch
+  537  git add .
+  538  git checkout -b alinabranch
+  539  git clone https://github.com/alinametiloranch/kgc_students_hw.git
+  540  git clone https://github.com/alinametiloranch/kgc_students_hw
+  541  git branch
+  542  git clone https://github.com/alinametiloranch/kgc_students_hw1
+  543  git branch
+  544  git checkout -b alinabranch
+  545  git clone https://github.com/alinametiloranch/kgc_students_hw1
+  546  cd /students/alinametiloranch/kgc_students_hw1/
+  547  git branch
+  548  git add .
+  549  git commit -m "task1"
+  550  cd
+  551  cd /students/alinametiloranch/kgc_students_hw1
+  552  ls
+  553  cd alina
+  554  ls
+  555  git commit -m "task 1"
+  556  git checkout alinametiloranch 
+  557  git push origin alinametiloranch
+  558  git add .
+  559  ssh -v alinametiloranch@212.109.195.132
+  560  git add .
+  561  cd kgc_students_hw1
+  562  ls -la | grep .git
+  563  git status
+  564  git add .
+  565  git commit -m "task1"
+  566  git checkout -b develop
+  567  git commit -m "task1"
+  568  git push origin develop
+  569  cd students\
+  570  ls
+  571  cd kgc_students_hw1/
+  572  ls
+  573  cd ..
+  574  ls
+  575  cd .. 
+  576  ls
+  577  cd alinametiloranch/
+  578  ls
+  579  cd kgc_students_hw1/
+  580  ls
+  581  find alina
+  582  cd /students/alinametiloranch/kgc_students_hw1/alina
+  583  ls
+  584  git clone https://github.com/alinametiloranch/kgc_students_hw1.git
+  585  git add .
+  586  git commit -m "new files"
+  587  git checkout -b develop
+  588  git add .
+  589  git commit -m "new files"
+  590  git push origin develop
+  591  eval "$(ssh-agent -s)"
+  592  ssh-add ~/.ssh/id_ed25519
+  593  ssh-copy-id -i ~/.ssh/id_ed25519.pub alinametiloranch
+  594  ssh-copy-id -i  /Users/alinagilmanova/.ssh/id_ed25519.pub alinametiloranch
+  595  cat ~/.ssh/id_ed25519.pub | ssh alinametiloranch@212.109.195.132 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+  596  cd .students/
+  597  cd /students/alinametiloranch/
+  598  ls
+  599  cd kgc_students_hw1/
+  600  ls
+  601  git loh
+  602  git log
+  603  git status
+  604  git branch -a
+  605  git checkout alinametiloranch 
+  606  ls
+  607  git log
+  608  git push
+  609  cd /students/alinametiloranch/kgc_students_hw1/
+  610  git branch
+  611  git push --set-upstream origin alinametiloranch
+  612  cd /students/alinametiloranch/kgc_students_hw1/
+  613  git push --set-upstream origin alinametiloranch
+  614  cd /students/alinametiloranch/kgc_students_hw1/
+  615  git push --set-upstream origin alinametiloranch
+  616  cd /students/alinametiloranch/kgc_students_hw1/
+  617  ls
+  618  ls -lh
+  619  ls -lah
+  620  git push --set-upstream origin alinametiloranch
+  621  git remote add origin https://github.com/alinametiloranch/kgc_students_hw1.git
+  622  git remote update origin https://github.com/alinametiloranch/kgc_students_hw1.git
+  623  cd /students/alinametiloranch/kgc_students_hw1/
+  624  git remote set-url origin https://github.com/alinametiloranch/kgc_students_hw1.git
+  625  git branch
+  626  git push --set-upstream origin alinametiloranch
+  627  git push
+  628  cd /students/general
+  629  chmod +x general
+  630  cd /students/general/
+  631  chmod +x general
+  632  groups
+  633  cd /students/general/
+  634  cd students
+  635  cd /students
+  636  ls
+  637  cd general
+  638  cd /students/general2
+  639  cd ..
+  640  cd general
+  641  ls
+  642  mamba create -n bwa -c bioconda bwa 
+  643  mamba activate /student/general
+  644  mamba env list
+  645  mamba activate /students/alinametiloranch/mam/envs/bwa
+  646  cd students
+  647  cd students/
+  648  cd /students/genera
+  649  cd /students/general
+  650  eval "$(mamba shell hook --shell bash)"
+  651  mamba activate /students/alinametiloranch/mam/envs/bwa
+  652  ls
+  653  cd paeruginosa-reads/
+  654  mamba bin
+  655  seqkit --help
+  656  cd /students/general/paeruginosa-reads
+  657  mamba activate bwa
+  658  eval "$(mamba shell hook --shell bash)"
+  659  mamba activate bwa
+  660  cd /students/general/paeruginosa-reads
+  661  eval "$(mamba shell hook --shell bash)"
+  662  mamba activate bwa
+  663  cd /students/general/paeruginosa-reads
+  664  mamba activate bwa
+  665  eval "$(mamba shell hook --shell bash)"
+  666  mamba activate bwa
+  667  eval "$(mamba shell hook --shell bash)"
+  668  mamba activate bwa
+  669  eval "$(mamba shell hook --shell bash)"
+  670  mamba activate bwa
+  671  apt install tmux\
+  672  apt install tmux/
+  673  ls
+  674  tmux 
+  675  exit
+  676  screen
+  677  tmux
+  678  exit
+  679  tmux ls
+  680  tmux attach 
+  681  mamba create -c bioconda -n samtools
+  682  cd /students/general/ref
+  683  mamba create -c bioconda -n samtools
+  684  mamba activte samtools
+  685  mamba activate bwa
+  686  eval "$(mamba shell hook --shell bash)"
+  687  mamba activate bwa
+  688  mamba activate samtools
+  689  tmux attach
+  690  cd /students/
+  691  cd alinametiloranch/
+  692  cd kgc_students_hw1/
+  693  ls
+  694  vim README.md 
+  695  ls
+  696  cd alina
+  697  ls
+  698  cd task1/
+  699  ls
+  700  cd work/
+  701  ls
+  702  cd ..
+  703  cd unknown/
+  704  cd ..
+  705  rm unknown/
+  706  cd ..
+  707  ls
+  708  nano README.md 
+  709  cat README.md 
+  710  cd /students/alinametiloranch/kgc_students_hw1/alina
+  711  nano README.md 
+  712  cat README.md 
+  713  nano README.md 
+  714  cat README.md 
+  715  cowsay o
+  716  cowsay "ура она сделала дз" >> README.md
+  717  cat README.md 
+  718  nano README.md 
+  719  cat README.md 
+  720  cd /students/alinametiloranch/kgc_students_hw1/alina
+  721  ls
+  722  mkdir task2
+  723  cd task2
+  724  vim task2
+  725  jp2a --width=80 screenshot.jpg | vim file.txt
+  726  cd /students/
+  727  /students/alinametiloranch/kgc_students_hw1/alin
+  728  cd /students/alinametiloranch/kgc_students_hw1/alin
+  729  cd /students/alinametiloranch/kgc_students_hw1/alina
+  730  sudo apt install jp2a
+  731  jp2a --width=80 screentop.png | vim file.txt
+  732  top -o RES
+  733  cd /students/alinametiloranch/kgc_students_hw1/alin
+  734  cd /students/alinametiloranch/kgc_students_hw1/alina
+  735  ls
+  736  nano README.md 
+  737  cat README.md 
+  738  figlet "ура 1 задание все" >> README.md
+  739  cat README.md 
+  740  cowsay "ура первое задание все!" >> README.md
+  741  cat README.md 
+  742  nano README.md 
+  743  git add .
+  744  git commit -m "task1done"
+  745  git push origin alinametiloranch
+  746  cd /students/alinametiloranch/kgc_students_hw1/alina
+  747  jp2a --width=80 screentop.png | vim file.txt
+  748  cd /students/alinametiloranch/kgc_students_hw1/alina
+  749  ls
+  750  cd kgc_students_hw1/
+  751  ls
+  752  cd ..
+  753  ls
+  754  cd kgc_students_hw1/
+  755  ls
+  756  cd ..
+  757  ls
+  758  cd /students/alinametiloranch/kgc_students_hw1/alina
+  759  ls
+  760  nano README.md 
+  761  cd /students/alinametiloranch/kgc_students_hw1/alina
+  762  nano README.md
+  763  cd /students/alinametiloranch/kgc_students_hw1/alina
+  764  nano README.md
+  765  cat README.md
+  766  git add .
+  767  git commit -m "2"
+  768  git push origin alinametiloranch
+  769  cd /students/alinametiloranc
+  770  cd /students/alinametiloranch
+  771  ls la-
+  772  ls -la
+  773  locate screentop.png
+  774  find screentop.png
+  775  sudo apt install plocate
+  776  locate screentop.png
+  777  cd /students/alinametiloranch
+  778  ls
+  779  cd kgc_students_hw1/
+  780  cd alina
+  781  ls
+  782  vim README.md
+  783  nano README.md
+  784  git add .
+  785  git commit -m "2.1"
+  786  git push origin alinametiloranch
+  787  cd /students/alinametiloranch/
+  788  mv screentop.png /students/alinametiloranch/kgc_students_hw1/alina/
+  789  cd /students/alinametiloranch/kgc_students_hw1/alina
+  790  ls
+  791  nano README.md
+  792  git add.
+  793  git add .
+  794  git commit -m "2.2"
+  795  git push origin alinametiloranch
+  796  locate screentop.png
+  797  ls
+  798  rm /home/alinametiloranch/screentop.png
+  799  rm /home/alinametiloranch/kgc_students_hw1/screentop.png
+  800  locate screentop.png
+  801  ls
+  802  cd /students/alinametiloranch/kgc_students_hw1/alina
+  803  pwd
+  804  cd ..
+  805  cd home
+  806  ls
+  807  cd alinametiloranch/
+  808  cd students
+  809  cd students/
+  810  ls
+  811  locate screentop.png
+  812  cd /students/alinametiloranch/kgc_students_hw1/alina
+  813  ls
+  814  locate screentop.png
+  815  mv screentop.png /students/alinametiloranch/kgc_students_hw1/alin
+  816  ls
+  817  locate screentop.png
+  818  mv /home/alinametiloranch/screentop.png /students/alinametiloranch/kgc_students_hw1/alina
+  819  cd /students/alinametiloranch/kgc_students_hw1/alina
+  820  ls
+  821  rm README.md.save
+  822  rm README.md.save.1
+  823  ls
+  824  git add .
+  825  git commit -m "all"
+  826  git push origin alinametiloranch
+  827  git pull
+  828  ls
+  829  cd kgc_students_hw1/
+  830  ls
+  831  cd alina
+  832  cd alinametiloranch
+  833  ls
+  834  cd .git/
+  835  ls .. 
+  836  cd ..
+  837  cd .. 
+  838  cd kgc_students_hw1/
+  839  ls
+  840  cd ..
+  841  cd alinametiloranch
+  842  cd students
+  843  cd /students
+  844  ls
+  845  cd alinametiloranch/
+  846  ls
+  847  cd kgc_students_hw1/
+  848  ls
+  849  cd alina/
+  850  ls
+  851  rm alina/.README.md.swp
+  852  ls
+  853  rm .vim.swp
+  854  ls
+  855  rm README.md.save
+  856  rm .READ.md.swp
+  857  ls
+  858  cd kgc_students_hw1/
+  859  ls
+  860  cd ..
+  861  ls
+  862  cd task1
+  863  ls
+  864  mkdir fastafiles
+  865  chmod +x ..
+  866  mkdir fastafiles
+  867  ls -la
+  868  cd ..
+  869  ls -la
+  870  chmod +x ..
+  871  cd task1
+  872  mkdir fastafiles
+  873  sudo mkdir fastafiles
+  874  ls
+  875  mv mrna ~/fastailes/
+  876  sudo mv mrna ~/fastailes/
+  877  sudo mv protein  ~/fastailes/
+  878  sudo mv reference  ~/fastailes/
+  879  ls
+  880  cd sequence/
+  881  ls
+  882  cd ..
+  883  sudo mv sequence  ~/fastailes/
+  884  ls
+  885  cd unknown/
+  886  ls
+  887  cd ..
+  888  rm -rf unknown
+  889  sudo rm -rf unknown
+  890  ls
+  891  grep "^>" dump.fasta
+  892  cd ..
+  893  grep "^>" dump.fasta
+  894  cd ..
+  895  grep "^>" dump.fasta
+  896  cd ..
+  897  grep "^>" dump.fasta
+  898  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  899  ls
+  900  cd fastafiles/
+  901  ls
+  902  cd ..
+  903  sudo mv sequence  ~/fastailes/
+  904  cd ..
+  905  cd  ~/fastailes/
+  906  sudo mv sequence  ~/fastailes/
+  907  sudo mv sequence  ~/fastafiles/
+  908  sudo mv protein  ~/fastafiles/
+  909  sudo mv mrna  ~/fastafiles/
+  910  sudo mv mrna ~/fastailes/
+  911  ls
+  912  sudo mv mrna ~/fastafiles/
+  913  sudo mv reference  ~/fastafiles/
+  914  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles
+  915  ls
+  916  cd ~/fastailes/
+  917  cd ~/fastafiles/
+  918  ls
+  919  sudo mv reference  /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/
+  920  sudo mv protein  /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/
+  921  sudo mv mrna   /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/
+  922  sudo mv sequence   /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/
+  923  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles
+  924  ls
+  925  cd protein/
+  926  ls
+  927  cd ..
+  928  cd reference/
+  929  ls
+  930  cd ..
+  931  find :/students/alinametiloranch -name "mrna" -type d
+  932  find /students/alinametiloranch -name "mrna" -type d
+  933  ls
+  934  rm -rf alin
+  935  ls
+  936  cd ..
+  937  ls
+  938  /dump.fasta
+  939  grep "^>" dump.fasta
+  940  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  941  ls
+  942  rm -rf fastafiles
+  943  sudo rm -rf fastafiles
+  944  ls
+  945  mkdir -p fastafiles/{mRNA,protein,sequence,work}
+  946  sudo mkdir -p fastafiles/{mRNA,protein,sequence,work}
+  947  ls
+  948  cd /fastafiles
+  949  cd ./fastafiles
+  950  ls
+  951  sudo groupadd senior
+  952  sudo chown -R :senior fastafiles
+  953  sudo chmod -R 775 fastafiles
+  954  sudo chmod 1777 fastafiles/work
+  955  sudo groupadd senior
+  956  sudo chown -R :senior fastafiles
+  957  sudo chown -R :senior ./ fastafiles
+  958  cd ..
+  959  sudo chown -R :senior fastafiles
+  960  sudo chmod -R 775 fastafiles
+  961  sudo chmod 1777 fastafiles/work
+  962  cd /alinametiloranch
+  963  cd ..
+  964  cd alinametiloranch/
+  965  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c _ {} \; > temp_headers.txt
+  966  ls
+  967  grep -i "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv {} fastafiles/protein/
+  968  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  969  ls
+  970  cd fastafiles/
+  971  mv  temp_headers.txt /students/alinametiloranch/kgc_students_hw1/alina/task1
+  972  mv  /students/alinametiloranch/temp_headers.txt /students/alinametiloranch/kgc_students_hw1/alina/task1
+  973  sudo mv  /students/alinametiloranch/temp_headers.txt /students/alinametiloranch/kgc_students_hw1/alina/task1
+  974  ls
+  975  cd ..
+  976  ls
+  977  grep -i "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv {} fastafiles/protein/
+  978  ls
+  979  cd fastafiles/
+  980  ls
+  981  cd protein/
+  982  ls
+  983  grep -i "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv {} /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/protein/
+  984  cd ..
+  985  grep -i "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv {} /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/protein/
+  986  cd fastafiles/protein/
+  987  ls
+  988  cd .. 
+  989  cd ..
+  990  cd .. 
+  991  cd ..
+  992  ls
+  993  cd /kgc_students_hw1/alina/task1
+  994  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+  995  ls
+  996  vim temp_headers.txt 
+  997  cat temp_headers.txt 
+  998  cd ..
+  999  tar -xzf backup.fasta.tar.gz
+ 1000  ls
+ 1001  mv /students/alinametiloranch/dump.fasta /students/alinametiloranch/kgc_students_hw1/alina/task1
+ 1002  sudo mv /students/alinametiloranch/dump.fasta /students/alinametiloranch/kgc_students_hw1/alina/task1
+ 1003  cd /students/alinametiloranch/kgc_students_hw1/alina/task1
+ 1004  ls
+ 1005  cat dump.fasta 
+ 1006  tar -xzf backup.fasta.tar.gz
+ 1007  grep -i "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv {} fastafiles/protein/
+ 1008  ls
+ 1009  cd fastafiles/protein/
+ 1010  ls
+ 1011  cd ..
+ 1012  ls
+ 1013  awk '/^>/ {if (seq) close(fname); seq=1; fname=sprintf("fasta_%03d.fa", ++count); print > fname; next} {if (seq) print > fname}' dump.fasta
+ 1014  sudo awk '/^>/ {if (seq) close(fname); seq=1; fname=sprintf("fasta_%03d.fa", ++count); print > fname; next} {if (seq) print > fname}' dump.fasta
+ 1015  ls
+ 1016  grep -iE "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv -v {} fastafiles/protein/
+ 1017  cd fastafiles/protein/
+ 1018  ls
+ 1019  grep -iE "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv -v {} /students/alinametiloranch/kgc_students_hw1/alina/task1/ fastafiles/protein/
+ 1020  cd ..
+ 1021  ls
+ 1022  cd ..
+ 1023  grep -iE "protein" temp_headers.txt | cut -d'|' -f2 | xargs -I {} mv -v {} /students/alinametiloranch/kgc_students_hw1/alina/task1/ fastafiles/protein/
+ 1024  cd fastafiles/protein
+ 1025  ls
+ 1026  cd ..
+ 1027  ls
+ 1028  rm -rf temp_headers.txt 
+ 1029  sudo rm -rf temp_headers.txt 
+ 1030  ls
+ 1031  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c  _ {} \; > temp_headers.txt
+ 1032  sudo find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c  _ {} \; > temp_headers.txt
+ 1033  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "protein|peptide|orf"; then
+        mv "$1" protein/
+    fi
+' _ {} \;
+ 1034  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "protein|peptide|orf"; then
+        mv "$1" fastafiles/protein/
+    fi
+' _ {} \;
+ 1035  ls -la
+ 1036  sudo chgrp -R senior fastafiles
+ 1037  sudo chmod -R 775 fastafiles
+ 1038  sudo chmod 1777 fastafiles/work
+ 1039  ls -la
+ 1040  sudo chmod -R 775  task1 
+ 1041  cd ..
+ 1042  sudo chmod -R 775  task1 
+ 1043  cd task1
+ 1044  ls -la
+ 1045  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "protein|peptide|orf"; then
+        mv "$1" fastafiles/protein/
+    fi
+' _ {} \;
+ 1046  cd ..
+ 1047  sudo chmod -R 777  task1 
+ 1048  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "protein|peptide|orf"; then
+        mv "$1" fastafiles/protein/
+    fi
+' _ {} \;
+ 1049  ls
+ 1050  cd task1
+ 1051  ls
+ 1052  ls -la
+ 1053  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "protein|peptide|orf"; then
+        mv "$1" fastafiles/protein/
+    fi
+' _ {} \;
+ 1054  cd fastafiles/protein
+ 1055  ls
+ 1056  cd ..
+ 1057  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "mrna"; then
+        mv "$1" fastafiles/protein/
+    fi
+' _ {} \;
+ 1058  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "protein|peptide|orf"; then
+        mv "$1" fastafiles/protein/
+    fi
+' _ {} \;
+ 1059  cd fastafiles/protein/
+ 1060  ls
+ 1061  find . -maxdepth 1 -name "*.fa.gz" -exec sh -c '
+    for file in "$@"; do
+        if gzip -dc "$file" | head -n1 | grep -qiE "mrna|transcript|cdna|rna"; then
+            echo "Перемещение мРНК файла: $file"
+            mv "$file" ../mRNA/
+        fi
+    done
+' sh {} +
+ 1062  ls -la
+ 1063  ls
+ 1064  find . -maxdepth 1 -name "*.fa.gz" -exec sh -c '
+    for file in "$@"; do
+        if gzip -dc "$file" | head -n1 | grep -qiE "mrna|transcript|cdna|rna"; then
+            echo "Перемещение мРНК файла: $file"
+            mv "$file" ../mRNA/
+        fi
+    done
+' sh {} +
+ 1065  find . -maxdepth 1 -name "*.fa.gz" -exec sh -c '
+    gzip -dc "$1" | head -n1 | grep -qiE "mrna|transcript|cdna|rna" && echo "$1"
+' _ {} \; > mrna_files.txt
+ 1066  xargs -a mrna_files.txt -I {} mv {} ../mRNA/
+ 1067  rm mrna_files.txt
+ 1068  ls
+ 1069  grep "^>" protein
+ 1070  cat 
+ 1071  mv fasta_39 /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mrna
+ 1072  mv fasta_39.fa /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mrna
+ 1073  mv /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/protein/fasta_39.fa /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mrna
+ 1074  ls
+ 1075  mv /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/protein/fasta_039.fa /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mrna
+ 1076  cd ..
+ 1077  cd mrna
+ 1078  ls
+ 1079  cd mRNA/
+ 1080  LS
+ 1081  ls
+ 1082  cd ..
+ 1083  cd mrna
+ 1084  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mrna
+ 1085  ls -la
+ 1086  rm -rf mrna
+ 1087  cdd
+ 1088  ls
+ 1089  cd mRNA/
+ 1090  ls
+ 1091  cd ..
+ 1092  cd protein/
+ 1093  find . -maxdepth 1 -name "*.fa.gz" -exec sh -c '
+    for file in "$@"; do
+        if gzip -dc "$file" | head -n1 | grep -qiE "mrna|transcript|cdna|rna"; then
+            echo "Перемещение мРНК файла: $file"
+            mv "$file" ../mRNA/
+        fi
+    done
+' sh {} +
+ 1094  find . -maxdepth 1 -name "*.fa.gz" -exec sh -c '
+    for file in "$@"; do
+        if gzip -dc "$file" | head -n1 | grep -qiE "mrna|transcript|cdna|rna"; then
+            echo "Перемещение мРНК файла: $file"
+            mv "$file" /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mRNA/
+        fi
+    done
+' sh {} +
+ 1095  cd ..
+ 1096  cd mRNA/
+ 1097  ls
+ 1098  cd ..
+ 1099  cd protein
+ 1100  ls
+ 1101  cd fastafiles/protein
+ 1102  for file in $(ls *.gz | head -5); do     echo "=== $file ===";     gunzip -c "$file" | head -n1;     echo ""; done
+ 1103  for file in $(ls *.fa | head -5); do     echo "=== $file ===";     gunzip -c "$file" | head -n1;     echo ""; done
+ 1104  for file in *. fa; do
+    if zcat "$file" | head -n1 | grep -qi "mrna\|transcript\|cdna\|rna"; then         echo "Перемещаем файл мРНК: $file"
+        mv "$file" ../mRNA/;     fi; done
+ 1105  for file in fasta_*.fa; do     if head -n1 "$file" | grep -qi "mrna\|transcript\|cdna\|rna"; then         mv "$file" ../mRNA/;         echo "Перемещен: $file";     fi; done
+ 1106  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "contig|"; then
+        mv "$1" fastafiles/sequence/
+    fi
+' _ {} \;
+ 1107  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "contig"; then
+        mv "$1" fastafiles/sequence/
+    fi
+' _ {} \;
+ 1108  ls
+ 1109  ind . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then
+        mv "$1" sequence/
+    fi
+' _ {} \;
+ 1110  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then
+        mv "$1" sequence/
+    fi
+' _ {} \;
+ 1111  find . -maxdepth 1 -name "fasta_*.fa" -exec sh -c '
+    if head -n1 "$1" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then
+        mv "$1"/students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/ sequence/
+    fi
+' _ {} \;
+ 1112  ды
+ 1113  ls
+ 1114  cd sequence/
+ 1115  ls
+ 1116  cd..
+ 1117  cd ..
+ 1118  cd protein/
+ 1119  for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then         mv "$file" sequence/;     fi; done
+ 1120  cd ..
+ 1121  cd mRNA/
+ 1122  for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then         mv "$file" sequence/;     fi; done
+ 1123  grep -H "^>" *.fa
+ 1124  mv fasta_030 protein
+ 1125  mv fasta_030.fa protein
+ 1126  grep -H "^>" *.fa
+ 1127  cd ..
+ 1128  cd..
+ 1129  cd ..
+ 1130  ls
+ 1131  for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then         mv "$file" sequence/;     fi; done
+ 1132  for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then         mv "$file" fastafiles/sequence/;     fi; done
+ 1133  for file in fasta_*.fa; do     if head -n1 "$file" | grep -qiE "genom|chromosome|contig|scaffold|plasmid|complete"; then         mv "$file" /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/sequence/;     fi; done
+ 1134  ls
+ 1135  cd 
+ 1136  cd /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/sequence
+ 1137  ls
+ 1138  for file in *.fa; do     header=$(head -n1 "$file");     name=$(echo "$header" | sed 's/^>//' | cut -d' ' -f1,2 | tr ' ' ‘_’);     mv "$file" "${name}.fasta"; done
+ 1139  or file in *; do
+ 1140  done
+ 1141  ды
+ 1142  ls
+ 1143  # Переходим в папку sequence
+ 1144  cd sequence
+ 1145  # Переименовываем файлы, исправляя проблемные символы
+ 1146  for file in *; do
+    if [ -d "$file" ];     then         continue;     fi;     
+    new_name=$(echo "$file" | sed 's/[^a-zA-Z0-9._-]//g');     
+    mv "$file" "$new_name";     echo "Переименован: $file -> $new_name"; done
+ 1147  # Возвращаемся обратно
+ 1148  cd ..
+ 1149  ды
+ 1150  ls
+ 1151  cd ..
+ 1152  cd fastafiles/sequence/
+ 1153  ls
+ 1154  cat > rename_sequence.sh << 'EOF'
+#!/bin/bash
+for file in *; do
+    # Пропускаем папки и сам скрипт
+    if [ -d "$file" ] || [ "$file" = "rename_sequence.sh" ]; then
+        continue
+    fi
+    
+    # Получаем базовое имя файла без пути
+    filename=$(basename "$file")
+    
+    # Извлекаем род и вид из имени файла
+    # Для файлов типа 'NC_002620.2'$'\342''Chlamydia.fasta'
+    if [[ "$filename" =~ NC_[0-9]+\.[0-9].*([A-Z][a-z]+)\.fasta ]]; then
+        genus="${BASH_REMATCH[1]}"
+        new_name="${genus}.fasta"
+        mv "$file" "$new_name"
+        echo "Переименован: $file -> $new_name"
+    
+    # Для файлов типа Aerococcus_viridans.fasta.gz
+    elif [[ "$filename" =~ ([A-Za-z]+)_([a-z]+)\.fasta\.gz ]]; then
+        genus="${BASH_REMATCH[1]}"
+        species="${BASH_REMATCH[2]}"
+        new_name="${genus}_${species}.fasta.gz"
+        mv "$file" "$new_name"
+        echo "Переименован: $file -> $new_name"
+    
+    # Для других файлов пытаемся извлечь информацию из заголовка
+    else
+        # Определяем способ чтения файла в зависимости от расширения
+        if [[ "$file" == *.gz ]]; then
+            header=$(zcat "$file" | head -n1)
+        else
+            header=$(head -n1 "$file")
+        fi
+        
+        # Извлекаем род и вид из заголовка
+        genus=$(echo "$header" | grep -oE "\b[A-Z][a-z]+" | head -1)
+        species=$(echo "$header" | grep -oE "\b[a-z]+" | head -2 | tail -1)
+        
+        if [ -n "$genus" ] && [ -n "$species" ]; then
+            if [[ "$file" == *.gz ]]; then
+                new_name="${genus}_${species}.fasta.gz"
+            else
+                new_name="${genus}_${species}.fasta"
+            fi
+            mv "$file" "$new_name"
+            echo "Переименован: $file -> $new_name"
+        else
+            echo "Не удалось извлечь род и вид для файла: $file"
+        fi
+    fi
+done
+EOF
+
+ 1155  for file in *; do
+    if [ -d "$file" ]; then         continue;     fi;     
+    if [[ "$file" == *.gz ]]; then         header=$(zcat "$file" | head -n1);     else         header=$(head -n1 "$file");     fi;     
+    genus=$(echo "$header" | grep -oE "\b[A-Z][a-z]+" | head -1);     species=$(echo "$header" | grep -oE "\b[a-z]+" | head -2 | tail -1);     
+    if [ -n "$genus" ] && [ -n "$species" ]; then
+        if [[ "$file" == *.gz ]]; then             new_name="${genus}_${species}.fasta.gz";         else             new_name="${genus}_${species}.fasta";         fi;         
+        mv "$file" "$new_name";         echo "Переименован: $file -> $new_name";     else         echo "Не удалось извлечь род и вид для файла: $file";         echo "Заголовок: $header";     fi; done
+ 1156  ды
+ 1157  ls
+ 1158  cat rename_sequence.sh 
+ 1159  rm -rf rename_sequence.sh 
+ 1160  ls
+ 1161  find . -maxdepth 1 -name "*.fasta" -exec gzip {} \;
+ 1162  ls
+ 1163  cd ..
+ 1164  cd protein/
+ 1165  ls
+ 1166  mv fasta_104.fa fastafiles/mRNA
+ 1167  mv fasta_104.fa /students/alinametiloranch/kgc_students_hw1/alina/task1 fastafiles/mRNA
+ 1168  cd ..
+ 1169  ls
+ 1170  mv fasta_104.fa /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mRNA
+ 1171  mv protein/fasta_104.fa /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/mRNA
+ 1172  cd mRNA/
+ 1173  ls
+ 1174  cat fasta_104.fa
+ 1175  cd .. 
+ 1176  cd..
+ 1177  cd .. 
+ 1178  ls
+ 1179  cd work/
+ 1180  ls
+ 1181  cd ..
+ 1182  rm -rf /students/alinametiloranch/kgc_students_hw1/alina/task1/work
+ 1183  ls
+ 1184  cd fastafiles/
+ 1185  ls
+ 1186  mv work /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles
+ 1187  ls
+ 1188  cd work/
+ 1189  ls
+ 1190  cd ..
+ 1191  rm -rf /students/alinametiloranch/kgc_students_hw1/alina/task1/fastafiles/work
+ 1192  ls
+ 1193  cd ..
+ 1194  ls
+ 1195  mkdir work
+ 1196  ls
+ 1197  cd .. 
+ 1198  git add.
+ 1199  git add .
+ 1200  git commit -m "recompleted task 1" 
+ 1201  git push origin metiloranch
+ 1202  git push origin alinametiloranch
+ 1203  git branch
+ 1204  git push origin alinametiloranch
+ 1205  git pull
+ 1206  git pull --rebase
+ 1207  git push origin alinametiloranch
+ 1208  sudo chgrp -R senior fastafiles
+ 1209  cd task1
+ 1210  sudo chgrp -R senior fastafiles
+ 1211  sudo chmod -R 775 fastafiles/mRNA fastafiles/protein fastafiles/sequence
+ 1212  ls -la
+ 1213  sudo chmod -R 664 fastafiles/mRNA/* fastafiles/protein/* fastafiles/sequence/*
+ 1214  ls -ld fastafiles/
+ 1215  cd ..
+ 1216  history > history.log
