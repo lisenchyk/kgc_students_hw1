@@ -12,6 +12,7 @@ cd /students/lisenchyk/work/kgc_students_hw1/lisenchyk/Task2
 
 ### 2.	Отсортируем по RES:
  Shift + M для сортировки по RES. В верхней строке будет процесс, потребляющий больше всего памяти.  
+ ![Рисунок1](https://github.com/lisenchyk/kgc_students_hw1/blob/main/Task2.png)  
 
 ### 3.	Укажем, какому пользователю он принадлежит, какой у него PID.
 PID: 63698 (идентификатор процесса)  
